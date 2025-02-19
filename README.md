@@ -52,5 +52,5 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 Feel free to fork this repository, create feature branches, and submit pull requests. Contributions are welcome!
 
 ## Contact
-For questions or issues, open an issue on GitHub or reach out via email at `your.email@example.com`.
+For questions or issues, open an issue on GitHub or reach out via email at ``.
 
