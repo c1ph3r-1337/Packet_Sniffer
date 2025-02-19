@@ -7,7 +7,7 @@ A packet sniffer is a network analysis tool that captures and inspects packets t
 - Captures live network packets
 - Displays packet details such as source/destination IP, protocol, and payload
 - Supports filtering packets by protocol (TCP, UDP, ICMP, etc.)
-- Provides real-time packet capture and logging
+- Provides real-time packet capture and logging.
 
 ## Prerequisites
 Ensure you have the following installed on your system:
