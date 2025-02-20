@@ -47,7 +47,8 @@ After renaming the containers, we tested connectivity from the `attacker` contai
 
 
 ### ✅ **Ping to Packet Sniffer**
-![image](https://github.com/user-attachments/assets/b7c0abb6-18d2-4d2f-a764-5c4ce837fb78)
+![image](https://github.com/user-attachments/assets/09dea018-34b4-4be8-9504-0a158ad077da)
+
 
 
 ---
