@@ -37,7 +37,7 @@ ping container3
 # Rename an existing container
 docker rename old-container-name new-container-name
 # example
-docker rename container1 attacker 
+# docker rename container1 attacker 
 ```
 
 ## 🌐 **Verifying Connectivity After Renaming**
