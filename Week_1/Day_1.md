@@ -43,12 +43,10 @@ docker rename old-container-name new-container-name
 After renaming the containers, we tested connectivity from the `attacker` container to the other two containers, and both tests were successful:
 
 ### ✅ **Ping to Client**
-![Ping to client](![image](https://github.com/user-attachments/assets/304beaa2-ed5b-4bd4-b44f-6eb42a2acfeb)
-)
+![Ping to client](![image](https://github.com/user-attachments/assets/304beaa2-ed5b-4bd4-b44f-6eb42a2acfeb))
 
 ### ✅ **Ping to Packet Sniffer**
-![Ping to packet_sniffer](![image](https://github.com/user-attachments/assets/3643e381-0754-4283-9ada-11745c662624)
-)
+![Ping to packet_sniffer](![image](https://github.com/user-attachments/assets/3643e381-0754-4283-9ada-11745c662624))
 
 ---
 
