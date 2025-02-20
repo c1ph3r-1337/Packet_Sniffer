@@ -1,56 +1,33 @@
-# Packet Sniffer
+# Docker Packet Sniffer Project Overview
 
-## Overview
-A packet sniffer is a network analysis tool that captures and inspects packets transmitted over a network. This tool can be used for monitoring network traffic, debugging network issues, and ethical hacking purposes.
+## 🗂 Project Structure
+- **Client Containers**: Simulate network clients.
+- **Attacker Container**: Executes a MITM attack and pings the clients.
+- **Sniffer Container**: Captures packets and generates a report.
 
-## Features
-- Captures live network packets
-- Displays packet details such as source/destination IP, protocol, and payload
-- Supports filtering packets by protocol (TCP, UDP, ICMP, etc.)
-- Provides real-time packet capture and logging.
+## 🕸 Network Setup
+- All containers are connected via a Docker bridge network.
 
-## Prerequisites
-Ensure you have the following installed on your system:
-- Python 3.x
-- `scapy` library (for packet capture)
-- Administrative or root privileges (required for network sniffing)
+## ⚙️ Workflow
+1. Clients communicate normally.
+2. The attacker performs an ARP spoofing attack.
+3. The attacker pings the clients.
+4. The sniffer captures packets and outputs a report after the last ping.
 
-## Installation
-1. Clone this repository:
-   ```sh
-   git clone https://github.com/yourusername/packet-sniffer.git
-   cd packet-sniffer
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
+## 🧩 Key Tools Used
+- **Client**: Ubuntu with ping utilities
+- **Attacker**: Kali Linux with `ettercap`
+- **Sniffer**: Ubuntu with `tcpdump`
 
-## Usage
-Run the packet sniffer with:
-```sh
-sudo python sniffer.py
-```
-Use optional arguments for filtering:
-```sh
-sudo python sniffer.py --protocol TCP
-```
+## 🚀 Quick Steps
+1. Create a Docker network.
+2. Build and run each container.
+3. Launch the MITM attack and pings.
+4. Extract the sniffer’s `.pcap` file for analysis.
 
-## Example Output
-```
-[12:30:15] SRC: 192.168.1.5 -> DST: 8.8.8.8 | Protocol: ICMP | Length: 64 bytes
-[12:30:16] SRC: 192.168.1.2 -> DST: 192.168.1.1 | Protocol: TCP | Length: 512 bytes
-```
+## 📝 Automation (Optional)
+- Add scripts to automate capture and report generation.
 
-## Disclaimer
-This tool is intended for ethical and educational purposes only. Unauthorized use of this tool on networks you do not own or have permission to analyze is illegal.
+---
 
-## License
-This project is licensed under the MIT License. See `LICENSE` for details.
-
-## Contributing
-Feel free to fork this repository, create feature branches, and submit pull requests. Contributions are welcome!
-
-## Contact
-For questions or issues, open an issue on GitHub or reach out via email at ``.
-
+For detailed setup and commands, refer to the `README.md` in each container's directory.
